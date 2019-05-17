@@ -1,0 +1,23 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=C:\Documents and Settings\gokhan-duthil\Bureau\TP coupleur\Prog\programme3.o
+Folder=Intermediary
+[File001]
+Location=programme3.HEX
+Folder=Output
+[File002]
+Location=programme3.LST
+Folder=Output
+[File003]
+Location=programme3.PJT
+Folder=Output
+[File004]
+Location=programme3.ERR
+Folder=Output
+[File005]
+Location=programme3.COF
+Folder=Output
+[TOOL_LOC_STAMPS]
+tool_loc{0C155615-B197-4A4B-AEB6-343BB3F41A35}=C:\Program Files\PICC\Ccsc.exe

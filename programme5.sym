@@ -1,0 +1,100 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B     MAIN.recu
+00C     MAIN.valeur_led
+00D     MAIN.bouton
+00E     MAIN.entree
+00F     MAIN.masque
+010     MAIN.@SCRATCH1
+011     lcd_putc.c
+012     lcd_gotoxy.x
+012     @delay_ms1.P1
+013     lcd_gotoxy.y
+014     lcd_gotoxy.address
+015     lcd_gotoxy.@SCRATCH1
+016     lcd_send_byte.address
+017     lcd_send_byte.n
+018     lcd_read_byte.ValeurLue
+018     lcd_send_byte.@SCRATCH1
+F71     CCP_5
+F71     CCP_5_LOW
+F72     CCP_5_HIGH
+F74     CCP_4
+F74     CCP_4_LOW
+F75     CCP_4_HIGH
+F83     PSP_DATA
+F84     Lcd_Data
+F87.0   enable
+F87.1   rw
+F87.2   rs
+FB4.6   C1OUT
+FB4.7   C2OUT
+FB8     CCP_3_LOW
+FB8     CCP_3
+FB9     CCP_3_HIGH
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000060  @delay_ms1
+000088  lcd_read_byte
+0000AA  lcd_send_byte
+0000DC  lcd_init
+00012A  lcd_gotoxy
+00014E  lcd_putc
+000190  MAIN
+000004  @const364
+00001E  @const365
+000038  @const366
+000190  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Documents and Settings\gokhan-duthil\Bureau\TP coupleur\Prog\
+
+Project Files:
+    programme5.c
+    18F97J60.h
+    ..\..\..\..\..\Program Files\PICC\Drivers\string.h
+    ..\..\..\..\..\Program Files\PICC\Drivers\stddef.h
+    ..\..\..\..\..\Program Files\PICC\Drivers\ctype.h
+    ..\..\..\..\..\Program Files\PICC\Drivers\stdlib.h
+    LCD_PicDemNet.C
+
+Units:
+    programme5.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F97J60
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      programme5.err
+    INHX32:      programme5.hex
+    Symbols:     programme5.sym
+    List:        programme5.lst
+    Debug/COFF:  programme5.cof
+    Project:     programme5.PJT
+    Call Tree:   programme5.tre

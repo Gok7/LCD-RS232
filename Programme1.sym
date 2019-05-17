@@ -1,0 +1,63 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+F71     CCP_5_LOW
+F71     CCP_5
+F72     CCP_5_HIGH
+F74     CCP_4_LOW
+F74     CCP_4
+F75     CCP_4_HIGH
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FB8     CCP_3_LOW
+FB8     CCP_3
+FB9     CCP_3_HIGH
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @PUTCHARI_BIU_1
+00000E  main
+00000E  @cinit
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Documents and Settings\gokhan-duthil\Bureau\TP coupleur\Prog\
+
+Project Files:
+    Programme1.c
+    18F97J60.h
+
+Units:
+    Programme1.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F97J60
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      Programme1.err
+    INHX32:      Programme1.hex
+    Symbols:     Programme1.sym
+    List:        Programme1.lst
+    Debug/COFF:  Programme1.cof
+    Project:     Programme1.PJT
+    Call Tree:   Programme1.tre

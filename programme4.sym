@@ -1,0 +1,112 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B-028 MAIN.chaine_recu
+029     MAIN.valeur_led
+02A-02B atoi.s
+02A     @PRINTF_U_351.P1
+02B     @PRINTF_U_351.P1
+02C     atoi.result
+02C     @DIV88.P1
+02C     lcd_putc.c
+02D     @DIV88.P1
+02D     lcd_gotoxy.x
+02D     @delay_ms1.P1
+02D     atoi.sign
+02E     atoi.base
+02E     lcd_gotoxy.y
+02E     @DIV88.@SCRATCH1
+02F     lcd_gotoxy.address
+02F     atoi.index
+030     atoi.c
+030     lcd_gotoxy.@SCRATCH1
+031     lcd_send_byte.address
+031     @MUL88.P1
+031     atoi.@SCRATCH1
+032     lcd_send_byte.n
+032     @MUL88.P1
+032     atoi.@SCRATCH2
+033     lcd_read_byte.ValeurLue
+033     lcd_send_byte.@SCRATCH1
+F71     CCP_5_LOW
+F71     CCP_5
+F72     CCP_5_HIGH
+F74     CCP_4_LOW
+F74     CCP_4
+F75     CCP_4_HIGH
+F83     PSP_DATA
+F84     Lcd_Data
+F87.0   enable
+F87.1   rw
+F87.2   rs
+FB4.6   C1OUT
+FB4.7   C2OUT
+FB8     CCP_3_LOW
+FB8     CCP_3
+FB9     CCP_3_HIGH
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @delay_ms1
+0000CE  @MUL88
+00011A  atoi
+00002C  lcd_read_byte
+00004E  lcd_send_byte
+000080  lcd_init
+0002B6  lcd_gotoxy
+0002DA  lcd_putc
+0003AC  MAIN
+00031C  @DIV88
+000344  @PRINTF_U_351
+0003AC  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Documents and Settings\gokhan-duthil\Bureau\TP coupleur\Prog\
+
+Project Files:
+    programme4.c
+    18F97J60.h
+    ..\..\..\..\..\Program Files\PICC\Drivers\string.h
+    ..\..\..\..\..\Program Files\PICC\Drivers\stddef.h
+    ..\..\..\..\..\Program Files\PICC\Drivers\ctype.h
+    ..\..\..\..\..\Program Files\PICC\Drivers\stdlib.h
+    LCD_PicDemNet.C
+
+Units:
+    programme4.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F97J60
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      programme4.err
+    INHX32:      programme4.hex
+    Symbols:     programme4.sym
+    List:        programme4.lst
+    Debug/COFF:  programme4.cof
+    Project:     programme4.PJT
+    Call Tree:   programme4.tre

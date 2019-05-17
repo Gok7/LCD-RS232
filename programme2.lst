@@ -1,0 +1,71 @@
+CCS PCH C Compiler, Version 4.091, 48179               18-janv.-13 09:17
+
+               Filename: programme2.lst
+
+               ROM used: 72 bytes (0%)
+                         Largest free fragment is 65528
+               RAM used: 7 (0%) at main() level
+                         7 (0%) worst case
+               Stack:    1 locations
+
+*
+00000:  GOTO   000E
+.................... #include<18F97J60.h> 
+.................... //////// Standard Header file for the PIC18F97J60 device //////////////// 
+.................... #device PIC18F97J60 
+.................... #list 
+....................  
+.................... #use delay(clock=25M) 
+.................... #fuses HS,NOWDT 
+.................... #use RS232(BAUD=9600,XMIT=PIN_C6,RCV=PIN_C7,STOP=1) 
+00004:  BTFSS  F9E.4
+00006:  BRA    0004
+00008:  MOVWF  FAD
+0000A:  GOTO   0044 (RETURN)
+....................  
+.................... char car_envoye; 
+.................... char car_recu; 
+....................  
+.................... void main(){ 
+0000E:  CLRF   FF8
+00010:  BCF    FD0.7
+00012:  CLRF   FEA
+00014:  CLRF   FE9
+00016:  BSF    F7E.3
+00018:  MOVLW  8A
+0001A:  MOVWF  FAF
+0001C:  MOVLW  02
+0001E:  MOVWF  F7F
+00020:  MOVLW  A6
+00022:  MOVWF  FAC
+00024:  MOVLW  90
+00026:  MOVWF  FAB
+00028:  MOVF   FC1,W
+0002A:  ANDLW  C0
+0002C:  MOVWF  FC1
+0002E:  MOVLW  07
+00030:  MOVWF  FB4
+....................  
+.................... 	while(true){ 
+.................... 		 
+.................... 		car_recu=getc(); 
+00032:  BTFSS  F9E.5
+00034:  BRA    0032
+00036:  MOVFF  FAE,06
+.................... 		car_envoye=car_recu+1; 
+0003A:  MOVLW  01
+0003C:  ADDWF  06,W
+0003E:  MOVWF  05
+.................... 		putc(car_envoye); 
+00040:  MOVF   05,W
+00042:  BRA    0004
+.................... 	} 
+00044:  BRA    0032
+....................  
+.................... } 
+00046:  SLEEP 
+
+Configuration Fuses:
+   Word  1: F480   NODEBUG NOXINST NOSTVREN NOWDT NOPROTECT
+   Word  2: FFC4   HS WDT32768 FCMEN IESO PRIMARY
+   Word  3: F7F8   CCP2C1 ECCPE ETHLED WAIT BW16 MCU EASHFT

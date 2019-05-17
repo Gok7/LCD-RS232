@@ -1,0 +1,36 @@
+[PROJECT]
+Target=programme2.HEX
+Development_Mode=2
+Processor=0xD760
+Processor_Text=PIC18F97J60
+ToolSuite=CCS
+
+[Directories]
+Include=
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=programme2.c;
+BuildTool=C-COMPILER
+OptionString=+FH
+AdditionalOptionString=
+BuildRequired=1
+
+[programme2.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=PROGRA~2.C
+
+[Windows]
+0=0000 PROGRA~2.C 0 0 796 451 3 0
+
+[Units]
+Count=1
+1=programme2.c (main)
